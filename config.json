@@ -1,0 +1,28 @@
+{
+  "designSystemPackages": ["@angular/material", "@angular/cdk", "@company/ui-kit", "@company/design-system"],
+  "ignore": [
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "**/*.stories.ts",
+    "**/test/**",
+    "**/tests/**",
+    "**/mocks/**",
+    "**/e2e/**"
+  ],
+  "scanOptions": {
+    "includeDeclarations": true,
+    "includeExternalModules": false
+  },
+  "reportOptions": {
+    "outputFormat": "json",
+    "includeDetails": true,
+    "sortBy": "name"
+  },
+  "weightings": {
+    "designSystem": 1.0,
+    "custom": 0.75,
+    "htmlElement": 0.25,
+    "dynamicImport": 0.5
+  }
+}
+
