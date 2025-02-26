@@ -16,7 +16,7 @@
 
 ## Introduction
 
-The Angular Design System Adoption CLI is a powerful tool designed to analyze Angular projects and measure the adoption of design system components. It scans through TypeScript files, identifies components, and calculates adoption metrics based on the usage of design system elements versus custom components.
+The Design System Adoption scanner CLI is a powerful tool designed to analyze Angular projects and measure the adoption of design system components. It scans through TypeScript files, identifies components, and calculates adoption metrics based on the usage of design system elements versus custom components.
 
 This tool is particularly useful for teams working on large Angular projects who want to track and improve their design system adoption over time.
 
@@ -26,7 +26,7 @@ To install the Angular Design System Adoption CLI, follow these steps:
 
 1. Clone the repository:
 
-git clone [https://github.com/your-repo/angular-design-system-cli.git](https://github.com/your-repo/angular-design-system-cli.git)
+git clone [https://github.com/Sabadzma/Design-system-adoption-scanner-CLI/tree/main](https://github.com/Sabadzma/Design-system-adoption-scanner-CLI/tree/main)
 cd angular-design-system-cli
 
 
@@ -100,7 +100,7 @@ Key components:
 - `path` and `fs`: Node.js built-in modules for file system operations.
 - `ora`: Provides elegant terminal spinners.
 - `Ajv`: JSON Schema validator for configuration validation.
-
+```
 
 2. **Configuration Schema**:
 
