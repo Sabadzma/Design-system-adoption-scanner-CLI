@@ -567,11 +567,3 @@ The tool generates a JSON report with the following structure:
   ]
 }
 ```
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License.
