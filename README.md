@@ -29,21 +29,21 @@ To install the Angular Design System Adoption CLI, follow these steps:
 git clone [https://github.com/your-repo/angular-design-system-cli.git](https://github.com/your-repo/angular-design-system-cli.git)
 cd angular-design-system-cli
 
-```plaintext
+
 
 2. Install dependencies:
 ```
 
 npm install
+```
 
-```plaintext
 
 3. Link the CLI globally (optional):
 ```
 
 npm link
 
-```plaintext
+```
 
 ## Usage
 
@@ -53,7 +53,7 @@ To use the Angular Design System Adoption CLI, run the following command:
 
 node index.js -p /path/to/angular/project -o report.json -c config.json -i
 
-```plaintext
+```
 
 Or if you've linked it globally:
 
@@ -61,7 +61,7 @@ Or if you've linked it globally:
 
 angular-design-system-cli -p /path/to/angular/project -o report.json -c config.json -i
 
-```plaintext
+```
 
 Options:
 - `-p, --path <path>`: Path to the Angular repository (required)
