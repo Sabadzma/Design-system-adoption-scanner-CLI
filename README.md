@@ -1,6 +1,6 @@
-Design System Adoption Scanner CLI
+# Design System Adoption Scanner CLI
 
-Table of Contents
+## Table of Contents
 
 1.  Introduction (#introduction)
     
@@ -27,47 +27,39 @@ Table of Contents
 9.  License (#license)
     
 
-Introduction
+## Introduction
 
 The Design System Adoption Scanner CLI is a powerful tool designed to analyze Angular projects and measure the adoption of design system components. It scans TypeScript files, identifies components, and calculates adoption metrics based on the usage of design system elements versus custom components.
 
 This tool is particularly useful for teams working on large Angular projects who want to track and improve their design system adoption over time.
 
-Installation
+## Installation
 
 To install the Design System Adoption Scanner CLI, follow these steps:
 
-1.  Clone the repository:
-    
-    bash
+**1.  Clone the repository:**
     
     ```bash
     git clone https://github.com/Sabadzma/Design-system-adoption-scanner-CLI.git
     cd Design-system-adoption-scanner-CLI
     ```
     
-2.  Install dependencies:
-    
-    bash
+  **2.  Install dependencies:**
     
     ```bash
     npm install
     ```
     
-3.  Link the CLI globally (optional):
-    
-    bash
+**3.  Link the CLI globally (optional):**
     
     ```bash
     npm link
     ```
     
 
-Usage
+**Usage**
 
 To use the Design System Adoption Scanner CLI, run the following command:
-
-bash
 
 ```bash
 node index.js -p /path/to/angular/project -o report.json -c config.json -i
@@ -75,13 +67,12 @@ node index.js -p /path/to/angular/project -o report.json -c config.json -i
 
 Or, if you've linked it globally:
 
-bash
 
 ```bash
 design-system-adoption-scanner-cli -p /path/to/angular/project -o report.json -c config.json -i
 ```
 
-Options
+**Options**
 
 -   -p, --path <path>: Path to the Angular repository (required)
     
@@ -92,7 +83,7 @@ Options
 -   -i, --incremental: Perform incremental scan (only changed files) (optional)
     
 
-Project Structure
+## Project Structure
 
 The project consists of three main files:
 
@@ -103,17 +94,15 @@ The project consists of three main files:
 3.  .github/workflows/ci.yml: GitHub Actions workflow for continuous integration.
     
 
-Code Explanation
+## Code Explanation
 
-index.js
+### index.js
 
 This file serves as the main entry point of the CLI application. It handles command-line arguments, configuration loading, and orchestrates the scanning process.
 
-Key Components
+**Key Components**
 
-1.  Imports:
-    
-    javascript
+**1.  Imports:**
     
     ```javascript
     import { program } from 'commander';
@@ -134,9 +123,8 @@ Key Components
         
     -   Ajv: Validates JSON configuration.
         
-2.  Configuration Schema:
+**2.  Configuration Schema:**
     
-    javascript
     
     ```javascript
     const configSchema = {
@@ -151,9 +139,7 @@ Key Components
     
     Ensures the configuration file has the required structure.
     
-3.  Command-line Interface Setup:
-    
-    javascript
+**3.  Command-line Interface Setup:**
     
     ```javascript
     program
