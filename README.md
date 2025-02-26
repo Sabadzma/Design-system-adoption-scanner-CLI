@@ -162,11 +162,9 @@ This file contains the core logic for scanning and analyzing Angular projects. I
 
 Key Components
 
-1.  Imports and Constants:
+**1.  Imports and Constants:**
     
-    javascript
-    
-    ```javascript
+   ```javascript
     import fs from 'fs/promises';
     import path from 'path';
     import { parse } from '@babel/parser';
@@ -181,34 +179,32 @@ Key Components
       htmlElement: 0.25,
       dynamicImport: 0.5
     };
-    ```
+   ```
     
-    Defines weights for adoption scoring.
+Defines weights for adoption scoring.
     
-2.  Main Scanning Function:
+**2.  Main Scanning Function:**
     
-    -   Loads the TypeScript configuration.
-        
-    -   Scans all files or only changed ones (incremental mode).
-        
-    -   Processes files in parallel for performance.
-        
-    -   Calculates adoption metrics (e.g., percentage of design system usage).
-        
-3.  File Analysis:
+   -   Loads the TypeScript configuration.
+       
+   -   Scans all files or only changed ones (incremental mode).
+       
+   -   Processes files in parallel for performance.
+       
+   -   Calculates adoption metrics (e.g., percentage of design system usage).
+       
+**3.  File Analysis:**
     
-    -   Parses TypeScript files into an Abstract Syntax Tree (AST).
-        
-    -   Identifies imports and component declarations.
-        
-    -   Classifies components as design system or custom.
+   -   Parses TypeScript files into an Abstract Syntax Tree (AST).
+       
+   -   Identifies imports and component declarations.
+       
+   -   Classifies components as design system or custom.
         
 
-.github/workflows/ci.yml
+## .github/workflows/ci.yml
 
 This file defines a GitHub Actions workflow for continuous integration:
-
-yaml
 
 ```yaml
 name: CI
@@ -235,11 +231,9 @@ jobs:
 -   Installs dependencies.
     
 
-Configuration
+# Configuration
 
 The tool uses a configuration file with this structure:
-
-json
 
 ```json
 {
@@ -253,7 +247,7 @@ json
 -   ignore: Glob patterns for files to exclude.
     
 
-Output
+# Output
 
 The tool generates a JSON report like this:
 
