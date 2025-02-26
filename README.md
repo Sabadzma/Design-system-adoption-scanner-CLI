@@ -1,6 +1,6 @@
 # Design System Adoption Scanner CLI
 
-## Table of Contents
+**Table of Contents**
 
 1.  Introduction
 2.  Installation
@@ -14,13 +14,13 @@
 7.  Output
     
 
-## Introduction
+# Introduction
 
 The Design System Adoption Scanner CLI is a powerful tool designed to analyze Angular projects and measure the adoption of design system components. It scans TypeScript files, identifies components, and calculates adoption metrics based on the usage of design system elements versus custom components.
 
 This tool is particularly useful for teams working on large Angular projects who want to track and improve their design system adoption over time.
 
-## Installation
+# Installation
 
 To install the Design System Adoption Scanner CLI, follow these steps:
 
@@ -68,7 +68,7 @@ design-system-adoption-scanner-cli -p /path/to/angular/project -o report.json -c
 -   -i, --incremental: Perform incremental scan (only changed files) (optional)
     
 
-## Project Structure
+# Project Structure
 
 The project consists of three main files:
 
@@ -79,9 +79,9 @@ The project consists of three main files:
 3.  .github/workflows/ci.yml: GitHub Actions workflow for continuous integration.
     
 
-## Code Explanation
+# Code Explanation
 
-### index.js
+## index.js
 
 This file serves as the main entry point of the CLI application. It handles command-line arguments, configuration loading, and orchestrates the scanning process.
 
@@ -90,12 +90,14 @@ This file serves as the main entry point of the CLI application. It handles comm
 **1.  Imports:**
     
     ```javascript
+    
     import { program } from 'commander';
     import { scanRepository } from './scanner.js';
     import path from 'path';
     import fs from 'fs/promises';
     import ora from 'ora';
     import Ajv from 'ajv';
+    
     ```
     
     -   commander: Parses command-line arguments.
@@ -111,7 +113,7 @@ This file serves as the main entry point of the CLI application. It handles comm
 **2.  Configuration Schema:**
     
     
-    ```javascript
+ ```javascript
     const configSchema = {
       type: 'object',
       properties: {
@@ -120,13 +122,12 @@ This file serves as the main entry point of the CLI application. It handles comm
       },
       required: ['designSystemPackages', 'ignore']
     };
-    ```
-    
-    Ensures the configuration file has the required structure.
+ ```
+ Ensures the configuration file has the required structure.
     
 **3.  Command-line Interface Setup:**
     
-    ```javascript
+```javascript
     program
       .version('1.0.2')
       .description('Design System Adoption Scanner CLI')
@@ -140,22 +141,22 @@ This file serves as the main entry point of the CLI application. It handles comm
       $ node index.js -p /path/to/angular/project -o report.json -c config.json -i
       `)
       .parse(process.argv);
-    ```
+```
     
-    Defines CLI options and provides usage examples.
+Defines CLI options and provides usage examples.
     
-4.  Main Execution Function:
+**4.  Main Execution Function:**
     
-    -   Validates the input path.
+-   Validates the input path.
         
-    -   Loads the configuration (or uses defaults).
+-   Loads the configuration (or uses defaults).
         
-    -   Executes the scan via scanRepository.
+-   Executes the scan via scanRepository.
         
-    -   Outputs the report (to a file or console).
+-   Outputs the report (to a file or console).
         
 
-scanner.js
+## scanner.js
 
 This file contains the core logic for scanning and analyzing Angular projects. It traverses the file system, parses TypeScript files, and calculates adoption metrics.
 
