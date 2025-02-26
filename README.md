@@ -2,29 +2,16 @@
 
 ## Table of Contents
 
-1.  Introduction (#introduction)
-    
-2.  Installation (#installation)
-    
-3.  Usage (#usage)
-    
-4.  Project Structure (#project-structure)
-    
-5.  Code Explanation (#code-explanation)
-    
-    -   index.js (#indexjs)
-        
-    -   scanner.js (#scannerjs)
-        
-    -   .github/workflows/ci.yml (#githubworkflowsciyml)
-        
-6.  Configuration (#configuration)
-    
-7.  Output (#output)
-    
-8.  Contributing (#contributing)
-    
-9.  License (#license)
+1.  Introduction
+2.  Installation
+3.  Usage 
+4.  Project Structure
+5.  Code Explanation 
+    -   index.js
+    -   scanner.js
+    -   .github/workflows/ci.yml
+6.  Configuration
+7.  Output
     
 
 ## Introduction
@@ -39,22 +26,20 @@ To install the Design System Adoption Scanner CLI, follow these steps:
 
 **1.  Clone the repository:**
     
-    ```bash
     git clone https://github.com/Sabadzma/Design-system-adoption-scanner-CLI.git
     cd Design-system-adoption-scanner-CLI
-    ```
     
   **2.  Install dependencies:**
     
-    ```bash
+   
     npm install
-    ```
+ 
     
 **3.  Link the CLI globally (optional):**
     
-    ```bash
+
     npm link
-    ```
+
     
 
 **Usage**
@@ -271,8 +256,6 @@ Output
 
 The tool generates a JSON report like this:
 
-json
-
 ```json
 {
   "metadata": {
@@ -299,11 +282,3 @@ json
   ]
 }
 ```
-
-Contributing
-
-Contributions are welcome! Please submit issues or pull requests to enhance the tool.
-
-License
-
-This project is licensed under the MIT License.
