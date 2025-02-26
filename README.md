@@ -89,7 +89,7 @@ This file serves as the main entry point of the CLI application. It handles comm
 
 **1.  Imports:**
     
-    ```javascript
+   ```javascript
     
     import { program } from 'commander';
     import { scanRepository } from './scanner.js';
@@ -98,9 +98,9 @@ This file serves as the main entry point of the CLI application. It handles comm
     import ora from 'ora';
     import Ajv from 'ajv';
     
-    ```
+   ```
     
-    -   commander: Parses command-line arguments.
+   -   commander: Parses command-line arguments.
         
     -   scanner.js: Provides the scanning logic.
         
