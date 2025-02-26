@@ -26,7 +26,7 @@ To install the Angular Design System Adoption CLI, follow these steps:
 
 1. Clone the repository:
 ```
-git clone [https://github.com/Sabadzma/Design-system-adoption-scanner-CLI/tree/main](https://github.com/Sabadzma/Design-system-adoption-scanner-CLI/tree/main)
+git clone https://github.com/Sabadzma/Design-system-adoption-scanner-CLI/tree/main
 cd angular-design-system-cli
 
 ```
