@@ -1,4 +1,4 @@
-# Angular Design System Adoption CLI
+# Design system adoption scanner CLI
 
 ## Table of Contents
 1. [Introduction](#introduction)
